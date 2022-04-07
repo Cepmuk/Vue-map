@@ -1,34 +1,39 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+//import { RouterLink, RouterView } from 'vue-router'
+//import HelloWorld from '@/components/HelloWorld.vue'
+import GMapMap from "@/components/GMapMap.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div>
+    <h1>MAP</h1>
+    <div>
+      <GMapMap class="map" />
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style>
+#app {
+  margin:0px;
+  max-width: 1280px;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*
+@import '@/assets/map.css'
+
+/*
 @import '@/assets/base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
 
-  font-weight: normal;
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -116,4 +121,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+*/
 </style>
