@@ -10,7 +10,7 @@ const app = createApp(App)
 //app.use(router)
 app.use(VueGoogleMaps, {
     load: {
-        key: 'AIzaSyDdek47qprJ2uacq6OC1_zAb3RWGJmNIzQ'
+        key: import.meta.env.VITE_MAP_KEY,
     }
 })
 
